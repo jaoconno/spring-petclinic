@@ -448,12 +448,12 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>nexus</id>
+            <id>nexus-snapshots</id>
             <name>snapshot</name>
             <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
         </snapshotRepository>
         <repository>
-            <id>nexus</id>
+            <id>nexus-releases</id>
             <name>release</name>
             <url>http://localhost:8081/nexus/content/repositories/releases</url>
         </repository>
