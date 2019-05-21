@@ -448,11 +448,24 @@
     
   <repositories>
     <repository>
-            <id>nexus-releases</id>
-            <name>release</name>
-            <url>http://localhost:8081/nexus/content/repositories/releases</url>
-    </repository>
+     <releases>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+        <checksumPolicy>warn</checksumPolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+        <checksumPolicy>fail</checksumPolicy>
+      </snapshots>
+      <id>nexus-releases</id>
+      <name>release</name>
+      <url>http://localhost:8081/nexus/content/repositories/releases</url>
+     </repository>
   </repositories>
+  <pluginRepositories>
+    ...
+  </pluginRepositories>
 
     <distributionManagement>
         <snapshotRepository>
