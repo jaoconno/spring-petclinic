@@ -300,6 +300,7 @@
                 <directory>${project.basedir}/src/test/resources</directory>
             </testResource>
         </testResources>
+        <!--
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -329,7 +330,7 @@
                     <nexusUrl>http://localhost:8081/nexus/</nexusUrl>
                     <skipStaging>true</skipStaging>
                 </configuration>
-            </plugin>
+            </plugin> -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
